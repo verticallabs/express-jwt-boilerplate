@@ -1,0 +1,9 @@
+<form action="/login" method="POST">
+  <input type="hidden" name="_csrf" value="{{csrfToken}}">
+  
+  Email: <input type="text" name="email">
+  Password: <input type="password" name="password">
+  <button type="submit">Submit</button>
+
+  <a href="/password/reset">Forgot password?</a>
+</form>
