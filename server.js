@@ -116,6 +116,8 @@ app.post('/password', jwtAuth.attachFromCookie, jwtAuth.verify, function(req, re
   });
 })
 
+// CRUD operations on users
+
 // fake resource
 app.get("/protected", jwtAuth.attachFromCookie, jwtAuth.verify, function(req, res) {
   res.send("OK")
